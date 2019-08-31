@@ -8,5 +8,9 @@
     "deploy": "gh-pages -d dist" 
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "3.5.2",
+    "gh-pages": "3.5.2"
+  }
 }
