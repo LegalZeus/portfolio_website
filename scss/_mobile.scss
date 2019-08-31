@@ -1,9 +1,15 @@
 // Widescreens
 @include mediaXL {
+  .projects{
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 // Desktops and Laptops
 @include mediaLg {
+  .projects{
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 // Tablets and small Laptops
@@ -16,6 +22,8 @@
       line-height: 1;
       margin-bottom: 1rem;
     }
+
+
   }
 
   ul.menu-nav,
@@ -26,6 +34,9 @@
     &.show {
       transform: translate3d(0, 0, 0);
     }
+    .projects{
+      grid-template-columns: repeat(2, 1fr);
+  }
   }
 
   .menu-nav {
@@ -61,4 +72,8 @@
   main#home h1 {
     margin-top: 10vh;
   }
+
+  .projects{
+    grid-template-columns: repeat(1, 1fr);
+}
 }
